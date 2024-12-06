@@ -1,4 +1,4 @@
-version: "3"
+version: '3.8'
 
 services:
   mysql:
@@ -21,6 +21,14 @@ services:
       - 8888:80
     environment:
       PMA_ARBITRARY: 1
+
+  ngrok:
+    image: ngrok/ngrok
+    environment:
+      - NGROK_AUTHTOKEN=2ZF6DXeegqw8YBQ0jZiZHZx2DEK_6ZAPfMYXJr75ujapsxYnf
+    command: http host.docker.internal:8000 --domain allowing-parakeet-steadily.ngrok-free.app
+    ports:
+      - "4040:4040"
 
 volumes:
   app_data:

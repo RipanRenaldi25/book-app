@@ -352,3 +352,68 @@
     width: 50px;
     transform: translateY(-50%);
 } */
+
+.offer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.offer h1 {
+    font-size: 2rem;
+}
+
+.offer-book_container_list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.offer-book_container_list .offer-book_container_item:nth-child(2n-1) .offer_book_container {
+    border-radius: 0 0 50% 50%;
+}
+
+.offer-book_container_list .offer-book_container_item:nth-child(2n) .offer_book_container {
+    border-radius: 50% 50% 0 0;
+}
+
+.offer-book_container_list .offer-book_container_item:nth-child(2n) {
+    border-radius: 50% 50% 0 0;
+}
+
+.offer-book_container_item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.offer-book_container_item h1 {
+    text-align: center;
+}
+
+
+.offer_book_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    background-color: red;
+}
+
+.offer img {
+    height: 200px;
+    width: 100%;
+}
+
+.offer-book_container_item-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-book_container_item-title h1 {
+    max-width: 60%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

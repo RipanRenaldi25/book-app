@@ -106,7 +106,7 @@
             </section>
             <section class="book_card">
                 <div class="book_card-container_image">
-                    <img src="{{ asset('images/cover3.jpg') }}" />
+                    <img src="{{ asset('images/cover2.jpg') }}" />
                 </div>
                 <div class="book_card-description">
                     <h1>The confusion of a large galaxy temo</h1>
@@ -123,7 +123,7 @@
             </section>
             <section class="book_card">
                 <div class="book_card-container_image">
-                    <img src="{{ asset('images/cover3.jpg') }}" />
+                    <img src="{{ asset('images/cover1.jpg') }}" />
                 </div>
                 <div class="book_card-description">
                     <h1>The confusion of a large galaxy temo</h1>
@@ -164,6 +164,47 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus distinctio natus ullam odio iste autem, eum illum, earum iusto hic ducimus iure doloribus eveniet incidunt nesciunt ipsum a unde quos.</p>
                 <button class="button button-tertiary">Create Account</button>
             </section>
+        </article>
+
+        <article class="offer">
+            <h1>Offers</h1>
+            <article class="offer-book_container_list">
+            <section class="offer-book_container_item">
+                <section class="offer_book_container">
+                    <img src="{{ asset('images/cover1.jpg') }}" alt="">
+                    <img src="{{ asset('images/cover2.jpg') }}" alt="">
+                    <img src="{{ asset('images/cover3.jpg') }}" alt="">
+                    <img src="{{ asset('images/cover1.jpg') }}" alt="">
+                </section>
+                <div class="offer-book_container_item-title">
+                    <h1>this month's discount - 50%</h1>
+                </div>
+            </section>
+            <section class="offer-book_container_item">
+                <section class="offer_book_container">
+                    <img src="{{ asset('images/cover3.jpg') }}" alt="">
+                    <img src="{{ asset('images/cover2.jpg') }}" alt="">
+                    <img src="{{ asset('images/cover1.jpg') }}" alt="">
+                    <img src="{{ asset('images/cover3.jpg') }}" alt="">
+                </section>
+                <div class="offer-book_container_item-title">
+                    <h1>this month's discount - 30%</h1>
+                </div>
+            </section>
+            <section class="offer-book_container_item">
+                <section class="offer_book_container">
+                    <img src="{{ asset('images/cover2.jpg') }}" alt="">
+                    <img src="{{ asset('images/cover3.jpg') }}" alt="">
+                    <img src="{{ asset('images/cover2.jpg') }}" alt="">
+                    <img src="{{ asset('images/cover1.jpg') }}" alt="">
+                </section>
+                <div class="offer-book_container_item-title">
+                    <h1>this month's discount - 20%</h1>
+                </div>
+            </section>
+
+
+            </article>
         </article>
     </article>
 </main>

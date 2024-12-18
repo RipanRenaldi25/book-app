@@ -231,7 +231,7 @@
                     <div class="carousel__item">
                         <img src="{{ asset('images/book-bg-2.jpg') }}" />
                         <div class="carousel__content">
-                            <div class="carousel__content-author">J.K. ROWLING</div>
+                            <div class="carousel__content-author">J.K. ROWLING2</div>
                             <div class="carousel__content-title">Harry Potter</div>
                             <div class="carousel__content-topic">Magis</div>
                             <div class="carousel__content-description">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -310,5 +310,47 @@
                 </div>
             </section>
         </article>
+
+        <article class="author">
+            <header>
+                <h1>Get To Know</h1>
+                <a href="#">See all</a>
+            </header>
+            <section class="author__list">
+                <section class="author__item">
+                    <div class="author__item-card--primary">
+                        <div class="name">
+                            <h1>Name: </h1>
+                            <h2>Frederick W. Taylor</h2>
+                        </div>
+                        <div class="about">
+                            <h1>About author: </h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem rem iste inventore
+                            </p>
+                        </div>
+                    </div>
+                    <img src="{{ asset('images/profile1.jpg') }}" />
+                    <div class="author__item-card--primary">
+                        <div class="name">
+                            <h1>Name: </h1>
+                            <h2>Frederick W. Taylor</h2>
+                        </div>
+                        <div class="about">
+                            <h1>About author: </h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem rem iste inventore
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section class="best_author-nav">
+                <div class="best_author-nav--active"></div>
+                <div class=""></div>
+                <div class=""></div>
+            </section>
+        </article>
     </main>
+
+    <footer>footer</footer>
 @endsection

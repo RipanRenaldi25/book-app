@@ -22,7 +22,9 @@ class BookFactory extends Factory
             "title" => fake()->sentence(3),
             "author" => fake()->name(),
             "created_at" => fake()->dateTimeBetween("-2 years", "now"),
-            "updated_at" => fake()->dateTimeBetween('created_at', "now")
+            "updated_at" => fake()->dateTimeBetween('created_at', "now"),
+            "img_url" => fake()->imageUrl(),
+            "price" => fake()->numberBetween(5, 50)
         ];
     }
 }

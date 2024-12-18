@@ -37,5 +37,7 @@ class DatabaseSeeder extends Seeder
 
             Review::factory($numReviews)->badReviews()->for($book);
         });
+
+        
     }
 }

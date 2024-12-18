@@ -231,6 +231,12 @@ body {
     gap: 20px;
 }
 
+@media (max-width: 1028px) {
+    .book_card_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .book_card_container img {
     width: 100%;
 }
@@ -238,14 +244,16 @@ body {
 .book_card {
     display: flex;
     flex-direction: column;
-    gap: 10px
+    gap: 10px;
 }
 
 .book_card-description {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    width: 100%;
 }
+
 
 .book_card-description h1 {
     white-space: nowrap;
@@ -720,4 +728,44 @@ body {
 
 footer {
     height: 20vh;
+}
+
+@media (max-width: 768px) {
+    .author {
+        margin-top: 1rem;
+        height: 40vh;
+    }
+
+    .author header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        align-items: center;
+    }
+    
+    .author__list {
+        height: 17vh;
+    }
+    
+    .author__item {
+        color: white;
+        gap: 2rem;
+        padding: .2rem;
+        font-size: .6rem;
+    }
+    
+    .author__item img {
+        object-fit: cover;
+        border-radius: 0 0 50% 50%;
+        height: 20vh;
+        width: 100%;
+        flex: 1;
+    }
+    
+    .author__item-card--primary, 
+    .author__item-card--secondary {
+        padding: .2rem;
+        box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.2);
+        flex: 1;
+    }
 }

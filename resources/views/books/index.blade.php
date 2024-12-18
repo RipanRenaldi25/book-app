@@ -85,26 +85,31 @@
                 <h1>Bestsellers</h1>
                 <a><strong> See all </strong></a>
             </header>
-
             <article class="book_card_container">
-                <section class="book_card">
-                    <div class="book_card-container_image">
-                        <img src="{{ asset('images/cover3.jpg') }}" />
-                    </div>
-                    <div class="book_card-description">
-                        <h1>The confusion of a large galaxy temo</h1>
-                        <p>Price</p>
-                    </div>
-                    <h2 class="book_card-author">by: Penulis</h2>
-                    <div class="book_card-rating">
-                        <i class="material-icons book_card-rating--checked">star</i>
-                        <i class="material-icons book_card-rating--checked">star</i>
-                        <i class="material-icons book_card-rating--checked">star</i>
-                        <i class="material-icons">star</i>
-                        <i class="material-icons">star</i>
-                    </div>
-                </section>
-                <section class="book_card">
+                @foreach ($popularBooks as $popularBook)
+                    <section class="book_card">
+                        <div class="book_card-container_image">
+                            <img src="{{ $popularBook['img_url'] }}" />
+                        </div>
+                        <div class="book_card-description">
+                            <h1>{{ $popularBook->title }}</h1>
+                            <p>${{ $popularBook->price }}</p>
+                            {{-- <p>Price</p> --}}
+                        </div>
+                        <h2 class="book_card-author">by: {{ $popularBook->author }}</h2>
+                        <div class="book_card-rating">
+                            @for ($i = 1; $i < $popularBook['reviews_avg_rating']; $i++)
+                                <i class="material-icons book_card-rating--checked">star</i>
+                            @endfor
+                            @for ($i = 1; $i <= ceil(5 - $popularBook['reviews_avg_rating']); $i++)
+                                <i class="material-icons">star</i>
+                            @endfor
+
+                        </div>
+                    </section>
+                @endforeach
+
+                {{-- <section class="book_card">
                     <div class="book_card-container_image">
                         <img src="{{ asset('images/cover2.jpg') }}" />
                     </div>
@@ -154,7 +159,7 @@
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
                     </div>
-                </section>
+                </section> --}}
             </article>
 
             <article class="bg">
@@ -352,5 +357,5 @@
         </article>
     </main>
 
-    <footer>footer</footer>
+    {{-- <footer>footer</footer> --}}
 @endsection

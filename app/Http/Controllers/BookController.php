@@ -9,10 +9,10 @@ class BookController extends Controller
 {
     //
 
-    public function index(Request $req) {
-        $titleToSearch = $req->input("title");
-        $books = Book::when();
+    public function index(Request $req, Book $book) {
+        $popularBooks = $book->bestRated()->take(4)->get();
 
-        return view("books.index");
+        return view("books.index", ["popularBooks" => $popularBooks]);
     }
+
 }
